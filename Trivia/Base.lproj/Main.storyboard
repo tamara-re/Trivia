@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eos-IR-TK7">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Forecast View Controller-->
+        <scene sceneID="Ydb-x2-j2z">
+            <objects>
+                <viewController id="eos-IR-TK7" customClass="ForecastViewController" customModule="Trivia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Lp-Mk-T9u">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 1/3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jx8-SF-32f">
+                                <rect key="frame" x="119.66666666666667" y="79" width="153.66666666666663" height="33.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="3wt-Qd-5P3">
+                                <rect key="frame" x="109" y="187.66666666666666" width="175" height="426.66666666666674"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FDK-RX-32Y">
+                                        <rect key="frame" x="52.333333333333336" y="0.0" width="70.333333333333314" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="prG-fY-p3X">
+                                        <rect key="frame" x="0.0" y="50.333333333333343" width="175" height="175"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="175" id="VQ2-XE-lFJ"/>
+                                            <constraint firstAttribute="width" constant="175" id="uh3-a3-Mjp"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Option 1:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ewz-yi-wQv">
+                                        <rect key="frame" x="53.666666666666664" y="255.33333333333334" width="67.666666666666686" height="20.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Option 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eey-0a-aWc">
+                                        <rect key="frame" x="54.666666666666664" y="305.66666666666663" width="65.666666666666686" height="20.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Option 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDG-EW-PDJ">
+                                        <rect key="frame" x="54.666666666666657" y="356" width="66" height="20.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Option 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Utv-yV-KXq">
+                                        <rect key="frame" x="54.333333333333336" y="406.33333333333337" width="66.333333333333314" height="20.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="9fv-ZJ-8MA"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7BR-hH-sDY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Jx8-SF-32f" firstAttribute="top" secondItem="7BR-hH-sDY" secondAttribute="top" constant="20" id="XMk-aM-dQ0"/>
+                            <constraint firstItem="3wt-Qd-5P3" firstAttribute="leading" secondItem="7BR-hH-sDY" secondAttribute="leading" constant="200" id="fHK-XU-b1D"/>
+                            <constraint firstItem="7BR-hH-sDY" firstAttribute="trailing" secondItem="3wt-Qd-5P3" secondAttribute="trailing" constant="200" id="hGU-rY-QgL"/>
+                            <constraint firstItem="Jx8-SF-32f" firstAttribute="centerX" secondItem="6Lp-Mk-T9u" secondAttribute="centerX" id="iEL-SK-VCB"/>
+                            <constraint firstItem="3wt-Qd-5P3" firstAttribute="centerX" secondItem="6Lp-Mk-T9u" secondAttribute="centerX" id="s9A-pG-DNU"/>
+                            <constraint firstItem="3wt-Qd-5P3" firstAttribute="top" secondItem="Jx8-SF-32f" secondAttribute="bottom" constant="75" id="z99-6y-MQn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="categoryQuestion" destination="FDK-RX-32Y" id="euc-HD-dGq"/>
+                        <outlet property="imageQuestion" destination="prG-fY-p3X" id="bXl-Xf-6e9"/>
+                        <outlet property="optionFour" destination="Utv-yV-KXq" id="Cmz-01-Sxo"/>
+                        <outlet property="optionOne" destination="Ewz-yi-wQv" id="uAQ-6Z-Oqq"/>
+                        <outlet property="optionThree" destination="HDG-EW-PDJ" id="EnM-0I-4ZL"/>
+                        <outlet property="optionTwo" destination="Eey-0a-aWc" id="Fk3-3I-7U2"/>
+                        <outlet property="questionNum" destination="Jx8-SF-32f" id="9bf-OV-GRL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Me-c1-pWv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-260" y="40"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
