@@ -9,7 +9,9 @@ import Foundation
 import UIKit
 
 struct TriviaQuestions{
-    let questionNumber: String
+//    let questionNumber: String
+    let questionCode: QuestionCode
+    let questionChoices: [String]
    // let category: String
     //let category: String
 //    let mcqTwo: String
@@ -33,21 +35,43 @@ enum QuestionCode{
             return "Question 2/3"
         case .categoryMath:
             return "Question 3/3"
-        
+
         }
     }
     
-    var description: String{
+    var category: String{
         switch self{
         case .categoryScience:
-            return "Science: Ocenas "
+            return "Science: Oceans "
         case .categoryEntertainment:
             return "Entertainment: Movies"
         case .categoryMath:
             return "Math: Multiplication"
-        
         }
     }
+    
+    
+    var question: String{
+        switch self{
+        case .categoryScience:
+            return "What is the deepest part of the ocean? "
+        case .categoryEntertainment:
+            return "What is the oldest disney movie?"
+        case .categoryMath:
+            return "What is 2 x 2?"
+        }
+    }
+    
+//    var choiceOne: UIButton{
+//        switch self{
+//        case .categoryScience:
+//             setTitle("James Cook", for: normal)
+//        case .categoryEntertainment:
+//            return "Entertainment: Movies"
+//        case .categoryMath:
+//            return "Math: Multiplication""}
+//    }
+
     var image: UIImage? {
         switch self{
         case .categoryScience:
